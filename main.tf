@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "suryatf"
-    key    = "network/"
+    key    = "network/infra-terraform.tfstate"
     region = "ap-south-1"
   }
 }
