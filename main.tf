@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "suryatf"
+    key    = "infra-terraform/"
+    region = "us-east-2"
+  }
+}
+
 data "aws_availability_zones" "available" {
   state = "available"
 }
